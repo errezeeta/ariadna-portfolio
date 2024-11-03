@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight, GalleryVerticalEnd, Play } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState, useEffect } from "react"
@@ -19,7 +19,6 @@ export default function Component() {
     "https://mir-s3-cdn-cf.behance.net/project_modules/fs/5904df183225387.653b9b4635704.jpg",
     "https://mir-s3-cdn-cf.behance.net/project_modules/fs/14874d183228135.653ba5517515d.png",
     "https://mir-s3-cdn-cf.behance.net/project_modules/fs/2ee1c0183228135.653ba5f018a4c.png",
-    "https://mir-s3-cdn-cf.behance.net/project_modules/fs/f92d22183223835.653b95aac89f1.jpg",
     "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b322e3183223835.653b95aacd937.jpg",
     "https://mir-s3-cdn-cf.behance.net/project_modules/fs/daf952183223835.653b95aac7be7.jpg",
     "https://mir-s3-cdn-cf.behance.net/project_modules/fs/3aa4ab183223835.653b95aad1607.jpg",
@@ -75,17 +74,24 @@ export default function Component() {
             <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">
               Audiovisual & Graphic Designer
             </p>
-            <div className="flex justify-center space-x-4 animate-fade-in-up animation-delay-400">
+            {/* <div className="flex justify-center space-x-4 animate-fade-in-up animation-delay-400">
               <Link href="https://www.behance.net/ariadnazamora2" className="hover:text-primary-400 transition-colors">
-                <Button className="bg-primary-500 hover:bg-primary-600 text-white font-sans">
+                <Button  className="bg-primary-500 hover:bg-primary-600 text-white font-sans">
                   Mi Behance
-                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Button variant="outline" className="border-white text-black hover:bg-gray font-sans" onClick={handlePlayButtonClick}>
                 <Play className="mr-2 h-4 w-4" />
                 Play Showreel
               </Button>
+            </div> */}
+            <div className="flex justify-center space-x-4 animate-fade-in-up animation-delay-400">
+              <Link href="https://www.behance.net/ariadnazamora2" className="hover:text-primary-400 transition-colors">
+              <Button variant="outline" className="border-white text-black hover:bg-gray font-sans">
+                <GalleryVerticalEnd className="mr-2 h-4 w-4" />
+                My Bēhance
+              </Button>
+              </Link>
             </div>
           </div>
         </main>
