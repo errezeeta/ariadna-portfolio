@@ -8,7 +8,7 @@ import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 
 export default function Component() {
-  const [isPlaying, setIsPlaying] = useState(true)
+  // const [isPlaying, setIsPlaying] = useState(true)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [fade, setFade] = useState(true)
   const images = [
@@ -19,19 +19,19 @@ export default function Component() {
   ]
   const router = useRouter()
 
-  useEffect(() => {
-    let interval: NodeJS.Timeout
-    if (isPlaying) {
-      interval = setInterval(() => {
-        setFade(false)
-        setTimeout(() => {
-          setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-          setFade(true)
-        }, 500)
-      }, 3000)
-    }
-    return () => clearInterval(interval)
-  }, [isPlaying, images.length])
+  // useEffect(() => {
+  //   let interval: NodeJS.Timeout
+  //   if (isPlaying) {
+  //     interval = setInterval(() => {
+  //       setFade(false)
+  //       setTimeout(() => {
+  //         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
+  //         setFade(true)
+  //       }, 500)
+  //     }, 3000)
+  //   }
+  //   return () => clearInterval(interval)
+  // }, [isPlaying, images.length])
 
   const handlePlayButtonClick = () => {
     router.push("/videobook")
