@@ -14,7 +14,7 @@ export default function Footer() {
       </div>
       <div className="flex items-center space-x-2">
         <Instagram className="text-white" />
-        <Link href="https://www.instagram.com/arizamora" target="_blank" className="text-white hover:text-primary-400 transition-colors font-sans">
+        <Link href="https://www.instagram.com/ariadnazamoranaranjo" target="_blank" className="text-white hover:text-primary-400 transition-colors font-sans">
           <p>@ariadnazamoranaranjo</p>
         </Link>
       </div>
